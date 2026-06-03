@@ -13,7 +13,7 @@
             --success-green: #00ff66;
         }
 
-        /* ⚪ सिस्टीम लाईट मोड (Light Theme) */
+        /* ⚪ सिस्टीम लाईट मोड */
         :root {
             --bg-black: #f4f5f8;
             --card-dark: #ffffff;
@@ -24,7 +24,7 @@
             --ad-bg: #eaeaea;
         }
 
-        /* ⚫ सिस्टीम डार्क मोड (Dark Theme) */
+        /* ⚫ सिस्टीम डार्क मोड */
         @media (prefers-color-scheme: dark) {
             :root {
                 --bg-black: #050507;
@@ -90,7 +90,7 @@
 
         /* 📺 चॅनेल ओळख कार्ड */
         .channel-id-card {
-            max-width: 1200px; margin: 25px auto; padding: 20px;
+            max-width: 1200px; margin: 15px auto; padding: 20px;
             background: var(--card-dark); border: 1px solid var(--border-color); border-radius: 12px;
             display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 15px;
         }
@@ -98,22 +98,24 @@
         .id-details p { color: var(--gray-text); font-size: 0.9rem; }
         .id-details span { color: var(--brand-gold); font-weight: 700; }
 
-        /* 💸 ADSTERRA NATIVE BANNER BOX */
-        .adsterra-box {
-            max-width: 100%; margin: 25px auto; padding: 10px;
-            background-color: var(--ad-bg); border: 1px solid var(--border-color);
-            border-radius: 8px; text-align: center; display: flex; flex-direction: column; align-items: center;
-        }
-
-        /* 📁 सुटसुटीत कॅटेगरी नेव्हिगेशन */
+        /* 📁 सुटसुटीत कॅटेगरी नेव्हिगेशन टॅब्ज (हे जाहिरातीच्या वरती आणले आहे) */
         .nav-tabs {
-            max-width: 1200px; margin: 20px auto; display: flex; gap: 10px; overflow-x: auto; padding: 5px 20px;
+            max-width: 1200px; margin: 15px auto; display: flex; gap: 10px; overflow-x: auto; padding: 5px 20px;
+            justify-content: center;
         }
         .tab-btn {
             background-color: var(--card-dark); color: var(--text-light); border: 1px solid var(--border-color);
-            padding: 8px 16px; border-radius: 6px; white-space: nowrap; font-weight: 600; font-size: 0.9rem; text-decoration: none;
+            padding: 10px 20px; border-radius: 6px; white-space: nowrap; font-weight: 700; font-size: 0.95rem; text-decoration: none;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
         .tab-btn:hover { border-color: var(--brand-gold); color: var(--brand-gold); }
+
+        /* 💸 ADSTERRA NATIVE BANNER BOX */
+        .adsterra-box {
+            max-width: 100%; margin: 15px auto; padding: 10px;
+            background-color: var(--ad-bg); border: 1px solid var(--border-color);
+            border-radius: 8px; text-align: center; display: flex; flex-direction: column; align-items: center;
+        }
 
         /* 🛑 सेक्शन्स हेडर */
         .section-header { max-width: 1200px; margin: 40px auto 20px auto; padding: 0 20px; }
@@ -207,20 +209,20 @@
         <p style="color: var(--brand-gold); font-weight: 600; font-size: 0.9rem;">Verified Creator Website ✅</p>
     </div>
 
-    <!-- 💸 २. ADSTERRA TOP NATIVE BANNER -->
-    <div class="adsterra-box">
-        <p style="color: var(--gray-text); font-size: 0.7rem; margin-bottom: 6px;">Sponsored Advertisement</p>
-        <script async="async" data-cfasync="false" src="https://pl29627359.effectivecpmnetwork.com/3ec6a6a3f76b75b446c4a7c749c8a235/invoke.js"></script>
-        <div id="container-3ec6a6a3f76b75b446c4a7c749c8a235"></div>
-    </div>
-
-    <!-- 📁 क्विक नेव्हिगेशन टॅब्ज -->
+    <!-- 📁 क्विक नेव्हिगेशन टॅब्ज (आता जाहिरातीच्या वरती कडक मांडणीत दिसतील) -->
     <div class="nav-tabs">
         <a href="#banjara-sec" class="tab-btn">बंजारा स्पेशल</a>
         <a href="#marathi-sec" class="tab-btn">मराठी बायो</a>
         <a href="#hindi-sec" class="tab-btn">हिंदी बायो</a>
         <a href="#english-sec" class="tab-btn">English VIP</a>
         <a href="#symbols-sec" class="tab-btn">Viral Symbols</a>
+    </div>
+
+    <!-- 💸 २. ADSTERRA TOP NATIVE BANNER (युझरला आधी नाव दिसेल मग खाली जाहिरात येईल) -->
+    <div class="adsterra-box">
+        <p style="color: var(--gray-text); font-size: 0.7rem; margin-bottom: 6px;">Sponsored Advertisement</p>
+        <script async="async" data-cfasync="false" src="https://pl29627359.effectivecpmnetwork.com/3ec6a6a3f76b75b446c4a7c749c8a235/invoke.js"></script>
+        <div id="container-3ec6a6a3f76b75b446c4a7c749c8a235"></div>
     </div>
 
     <!-- ==================== १. गोर बंजारा स्पेशल सेक्श ==================== -->
@@ -259,30 +261,23 @@
         <div class="data-card"><div class="content-text">👑 VIP Account 👑<br>🦁 Born To Rule Not To Follow 🦅<br>🎧 Music & Video Obsessed 🎬<br>⚡ High Voltage Personality 🔋<br>🔒 Silence Is My Best Weapon ⚔️</div><button class="action-btn" onclick="copyBioEngine(this)">Copy Bio 📋</button></div>
     </div>
 
-    <!-- ==================== ५. व्हायरल सिंगल सिम्बॉल्स सेक्श (३५+ ULTRA VIP DATA) ==================== -->
+    <!-- ==================== ५. व्हायरल सिंगल सिम्बॉल्स सेक्श ==================== -->
     <div class="section-header" id="symbols-sec"><div class="section-title">Viral Symbols (1-Click Copy)</div></div>
     <div class="symbol-container">
-        <!-- 👑 ATTITUDE & VIP STYLES -->
         <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>亗</span><div class="symbol-sub-tag">King 亗</div></div>
         <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>👑</span><div class="symbol-sub-tag">Crown</div></div>
-        <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>💎</span><div class="symbol-tag symbol-sub-tag">VIP Diamond</div></div>
-        <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>🎪</span><div class="symbol-tag symbol-sub-tag">Tent King</div></div>
-        <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>✨</span><div class="symbol-tag symbol-sub-tag">Shine</div></div>
-        <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>🔥</span><div class="symbol-tag symbol-sub-tag">Fire / Trend</div></div>
-
-        <!-- 🔱 CULTURE & DEVOTIONAL -->
+        <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>💎</span><div class="symbol-sub-tag">VIP Diamond</div></div>
+        <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>🎪</span><div class="symbol-sub-tag">Tent King</div></div>
+        <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>✨</span><div class="symbol-sub-tag">Shine</div></div>
+        <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>🔥</span><div class="symbol-sub-tag">Fire / Trend</div></div>
         <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>🔱</span><div class="symbol-sub-tag">Trident 🔱</div></div>
         <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>📿</span><div class="symbol-sub-tag">Beads / Japa</div></div>
         <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>🚩</span><div class="symbol-sub-tag">Banjara Flag</div></div>
         <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>🙏</span><div class="symbol-sub-tag">Namaskar</div></div>
-
-        <!-- 🦁 ANIMAL & ATTITUDE -->
         <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>🦁</span><div class="symbol-sub-tag">Lion King</div></div>
         <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>🦅</span><div class="symbol-sub-tag">Eagle Eagle</div></div>
         <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>🐺</span><div class="symbol-sub-tag">Wolf Boy</div></div>
         <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>🦂</span><div class="symbol-sub-tag">Scorpion</div></div>
-
-        <!-- ⚔️ KILLER & WEAPONS (DANGER STYLES) -->
         <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>⚔️</span><div class="symbol-sub-tag">Swords</div></div>
         <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>刀</span><div class="symbol-sub-tag">Katana</div></div>
         <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>🔪</span><div class="symbol-sub-tag">Knife</div></div>
@@ -290,23 +285,17 @@
         <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>🪓</span><div class="symbol-sub-tag">Axe Weapon</div></div>
         <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>☠️</span><div class="symbol-sub-tag">Danger Skull</div></div>
         <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>🩸</span><div class="symbol-sub-tag">Blood Red</div></div>
-
-        <!-- ⚡ HIGH VOLTAGE & NEON -->
         <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>⚡</span><div class="symbol-sub-tag">Lightning</div></div>
         <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>⛓️</span><div class="symbol-sub-tag">Chain Jail</div></div>
         <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>💥</span><div class="symbol-sub-tag">Blast Crew</div></div>
         <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>🔋</span><div class="symbol-sub-tag">Full Power</div></div>
         <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>☣️</span><div class="symbol-sub-tag">Biohazard</div></div>
-
-        <!-- 🎧 MUSIC & STATUS CREATORS SPECIAL -->
         <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>🎧</span><div class="symbol-sub-tag">Headphone</div></div>
         <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>🎵</span><div class="symbol-sub-tag">Beats Music</div></div>
         <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>🎬</span><div class="symbol-sub-tag">Status Editor</div></div>
         <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>🎥</span><div class="symbol-sub-tag">Camera Reel</div></div>
         <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>🥁</span><div class="symbol-sub-tag">Banjara Drum</div></div>
         <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>🎸</span><div class="symbol-sub-tag">Rock Guitar</div></div>
-
-        <!-- 🖤 REELS EMOTIONS -->
         <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>🖤</span><div class="symbol-sub-tag">Black Heart</div></div>
         <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>🎯</span><div class="symbol-sub-tag">Target Goal</div></div>
         <div class="single-symbol-card" onclick="copySingleSymbol(this)"><span>⏳</span><div class="symbol-sub-tag">Hourglass</div></div>
