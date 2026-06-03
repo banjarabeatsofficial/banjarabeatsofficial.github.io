@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banjara Beats Official | VIP Status & Bio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <title>Banjara Beats Official | Official Premium Bio & Symbols Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
     
     <style>
-        /* 🎨 लोगो मॅचिंग ब्रँड कलर्स (Black, Gold & Neon Red) */
+        /* 🎨 ब्रँड कलर स्कीम (हुबेहूब चॅनेल लोगो सारखी: मॅट ब्लॅक, नियन रेड आणि रॉयल गोल्ड) */
         :root {
-            --bg-main: #0a0a0c;        /* लोगोसारखा कडक काळा रंग */
-            --card-bg: #121216;        /* सिस्टमॅटिक डार्क कार्ड्स */
-            --brand-gold: #ffaa00;     /* लोगोमधील चमकदार सोनेरी रंग */
-            --brand-red: #ff2a2a;      /* लोगोमधील निऑन लाल बॉर्डर */
-            --text-light: #e0e0e6;
-            --white: #ffffff;
+            --bg-black: #050507;
+            --card-dark: #0f1015;
+            --brand-gold: #ffaa00;
+            --brand-red: #ff1a1a;
+            --text-light: #f5f5fa;
+            --gray-text: #a0a0ab;
+            --success-green: #00ff66;
         }
 
         * {
@@ -25,205 +26,351 @@
         }
 
         body {
-            background-color: var(--bg-main);
+            background-color: var(--bg-black);
             color: var(--text-light);
-            padding-bottom: 50px;
+            padding-bottom: 60px;
         }
 
-        /* 👑 सिस्टमॅटिक ब्रँडेड हेडर (Logo + Name) */
+        /* 👑 एकदम प्रीमियम आणि सिस्टीमॅटिक हेडर */
         header {
             background: #000000;
             border-bottom: 3px solid var(--brand-gold);
-            padding: 15px 20px;
-            box-shadow: 0 4px 20px rgba(255, 170, 0, 0.15);
+            padding: 15px 24px;
             position: sticky;
             top: 0;
-            z-index: 100;
+            z-index: 1000;
+            box-shadow: 0 4px 25px rgba(255, 170, 0, 0.15);
         }
 
-        .header-container {
+        .header-wrap {
             max-width: 1200px;
             margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand-core {
             display: flex;
             align-items: center;
             gap: 15px;
         }
 
-        /* 🔴 चॅनेलचा गोल लोगो */
-        .brand-logo {
-            width: 55px;
-            height: 55px;
+        .logo-circle {
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
             border: 2px solid var(--brand-gold);
-            background: linear-gradient(135deg, #222, #000);
+            background: radial-gradient(circle, #250202 0%, #000000 100%);
             display: flex;
             align-items: center;
             justify-content: center;
+            font-family: 'Rajdhani', sans-serif;
             font-weight: 800;
-            font-size: 1.2rem;
-            color: var(--brand-gold);
-            text-shadow: 0 0 5px var(--brand-red);
-            box-shadow: 0 0 10px rgba(255, 170, 0, 0.3);
-        }
-
-        .brand-info h1 {
-            color: var(--white);
             font-size: 1.5rem;
-            font-weight: 800;
-            letter-spacing: 0.5px;
+            color: var(--brand-gold);
+            text-shadow: 0 0 8px var(--brand-red);
+            box-shadow: 0 0 15px rgba(255, 26, 26, 0.2);
         }
 
-        .brand-info h1 span {
+        .brand-titles h1 {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: 0.5px;
+            line-height: 1.2;
+        }
+
+        .brand-titles h1 span {
             color: var(--brand-gold);
         }
 
-        .brand-info p {
-            color: #888;
+        .brand-titles p {
+            color: var(--brand-red);
             font-size: 0.85rem;
-            font-weight: 600;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
         }
 
-        /* 💸 जाहिरातींसाठी सिस्टमॅटिक सुरक्षित जागा */
-        .ad-spot {
+        .yt-badge {
+            background: #ff0000;
+            color: #fff;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        .yt-badge:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+        }
+
+        /* 📺 चॅनेल ओळख कार्ड (Channel Identification Card) */
+        .channel-id-card {
+            max-width: 1200px;
+            margin: 25px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #0f1015 0%, #000000 100%);
+            border: 1px solid #1f2029;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .id-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .id-details h2 {
+            font-size: 1.3rem;
+            color: #fff;
+        }
+
+        .id-details p {
+            color: var(--gray-text);
+            font-size: 0.9rem;
+        }
+
+        .id-details span {
+            color: var(--brand-gold);
+            font-weight: 700;
+        }
+
+        /* 💸 ADSTERRA PREMIUM BANNER CONTAINER */
+        .adsterra-box {
             max-width: 728px;
             margin: 25px auto;
             padding: 10px;
+            background: #090a0e;
+            border: 1px solid #1a1b23;
+            border-radius: 8px;
             text-align: center;
-            background: #111;
-            border: 1px solid #222;
-            border-radius: 6px;
+            min-height: 90px;
         }
 
-        /* 📁 सुटसुटीत सेक्शन्स टायटल्स */
-        .section-box {
+        /* 📁 सुटसुटीत सिस्टीमॅटिक नेव्हिगेशन टॅब्ज */
+        .nav-tabs {
             max-width: 1200px;
-            margin: 35px auto 15px auto;
+            margin: 20px auto;
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            padding: 5px 20px;
+            scrollbar-width: none;
+        }
+
+        .tab-btn {
+            background: #12131a;
+            color: #fff;
+            border: 1px solid #222430;
+            padding: 8px 16px;
+            border-radius: 6px;
+            white-space: nowrap;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .tab-btn:hover {
+            border-color: var(--brand-gold);
+            color: var(--brand-gold);
+        }
+
+        /* 🛑 सेक्शन्स हेडर्स */
+        .section-header {
+            max-width: 1200px;
+            margin: 40px auto 20px auto;
             padding: 0 20px;
         }
 
         .section-title {
-            font-size: 1.25rem;
-            color: var(--white);
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.6rem;
+            color: #ffffff;
             font-weight: 700;
+            text-transform: uppercase;
             display: flex;
             align-items: center;
             gap: 10px;
-            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
         .section-title::before {
             content: '';
-            display: inline-block;
-            width: 5px;
-            height: 22px;
+            width: 6px;
+            height: 24px;
             background: var(--brand-red);
+            display: inline-block;
+            box-shadow: 0 0 10px var(--brand-red);
             border-radius: 2px;
-            box-shadow: 0 0 8px var(--brand-red);
         }
 
-        /* 🎴 क्लीन ग्रीड सिस्टीम */
-        .grid-container {
+        /* 🎴 क्लीन ३-कॉलम ग्रीड सिस्टीम (भरपूर डेटासाठी ओक्के) */
+        .grid-layout {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 20px;
         }
 
-        /* ⚡ कडक सिस्टीमॅटिक बायो कार्ड */
-        .bio-card {
-            background-color: var(--card-bg);
-            border: 1px solid #222;
+        .data-card {
+            background-color: var(--card-dark);
+            border: 1px solid #181922;
             border-radius: 10px;
-            padding: 22px;
+            padding: 20px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            transition: all 0.25s ease;
+            transition: all 0.2s ease;
         }
 
-        .bio-card:hover {
+        .data-card:hover {
             border-color: var(--brand-gold);
             transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(255, 170, 0, 0.08);
+            box-shadow: 0 5px 15px rgba(255, 170, 0, 0.05);
         }
 
-        .bio-text {
+        .content-text {
             color: #f0f0f5;
             font-size: 1.05rem;
             line-height: 1.8;
             white-space: pre-wrap;
             font-weight: 600;
-            margin-bottom: 22px;
-            letter-spacing: 0.3px;
+            margin-bottom: 20px;
         }
 
-        /* 📋 प्रिमियम ब्रँड कॉपी बटन */
-        .copy-button {
+        /* 📋 कॉपी बटनची कडक सिस्टीम */
+        .action-btn {
             background: linear-gradient(135deg, var(--brand-gold), #cc8800);
-            color: #000000;
+            color: #000;
             border: none;
-            padding: 12px;
-            border-radius: 6px;
+            padding: 10px 15px;
+            border-radius: 5px;
             cursor: pointer;
             font-weight: 700;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 8px;
-            transition: all 0.2s ease;
             text-transform: uppercase;
+            transition: 0.2s;
+            width: 100%;
         }
 
-        .copy-button:hover {
+        .action-btn:hover {
             background: linear-gradient(135deg, #ffbb33, var(--brand-gold));
-            box-shadow: 0 0 12px rgba(255, 170, 0, 0.3);
         }
 
-        /* कॉपी झाल्यावर बदलणारा रंग */
-        .copy-button.success {
-            background: linear-gradient(135deg, #00ff66, #00b344) !important;
+        .action-btn.copied {
+            background: linear-gradient(135deg, var(--success-green), #009933) !important;
             color: #000 !important;
+        }
+
+        /* 👑 सिम्बॉल्स स्पेशल २-कॉलम ग्रीड */
+        .symbol-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+        }
+
+        .symbol-card {
+            background: #090a0e;
+            border: 1px dashed #222432;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .symbol-text {
+            font-size: 1.2rem;
+            color: #fff;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+
+        /* 🔲 ऑल इन वन मोठा ब्लॉक */
+        .all-in-one-box {
+            max-width: 1160px;
+            margin: 20px auto;
+            background: #000;
+            border: 2px solid var(--brand-gold);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 0 20px rgba(255, 170, 0, 0.1);
+        }
+
+        .all-in-one-text {
+            font-size: 1.1rem;
+            line-height: 2;
+            color: var(--brand-gold);
+            white-space: pre-wrap;
+            word-break: break-all;
+            margin-bottom: 20px;
         }
 
         /* 👣 फुटर */
         footer {
             text-align: center;
             padding: 40px 20px;
-            margin-top: 60px;
-            border-top: 1px solid #1c1c22;
+            margin-top: 80px;
+            border-top: 1px solid #161722;
             font-size: 0.85rem;
             color: #555;
         }
 
-        /* मोबाईल स्क्रीनसाठी */
-        @media (max-width: 600px) {
-            .brand-info h1 { font-size: 1.25rem; }
-            .brand-logo { width: 48px; height: 48px; font-size: 1.1rem; }
-            .grid-container { grid-template-columns: 1fr; padding: 0 15px; }
+        @media (max-width: 768px) {
+            .brand-titles h1 { font-size: 1.3rem; }
+            .logo-circle { width: 50px; height: 50px; font-size: 1.2rem; }
+            .grid-layout { grid-template-columns: 1fr; padding: 0 15px; }
+            .channel-id-card { margin: 15px; }
         }
     </style>
 </head>
 <body>
 
-    <!-- 👑 ब्रँडेड हेडर (Logo + Name) -->
+    <!-- 👑 ब्रँडेड हेडर -->
     <header>
-        <div class="header-container">
-            <!-- तुझा गोल लोगो: इथे शॉर्ट मध्ये 'BB' दिसेल -->
-            <div class="brand-logo">BB</div>
-            <div class="brand-info">
-                <h1>Banjara Beats <span>Official</span></h1>
-                <p>Trending VIP Bio & Creative Symbols Collection</p>
+        <div class="header-wrap">
+            <div class="brand-core">
+                <div class="logo-circle">BB</div>
+                <div class="brand-titles">
+                    <h1>Banjara Beats <span>Official</span></h1>
+                    <p>VIP Bio & Symbols Hub</p>
+                </div>
             </div>
+            <a href="https://youtube.com/@BanjaraBeatsOfficial-y5t" target="_blank" class="yt-badge">Subscribe 🔔</a>
         </div>
     </header>
 
-    <!-- 📢 ADSTERRA TOP BANNER PLACE -->
-    <div class="ad-spot">
-        <!-- तुझा Adsterra बॅनर कोड खालील ओळीच्या ऐवजी टाक भाऊ -->
-        <p style="color: #333; font-size: 0.75rem; margin-bottom: 5px;">Sponsored Ad</p>
+    <!-- 📺 चॅनेल आयडी मेंशन कार्ड -->
+    <div class="channel-id-card">
+        <div class="id-left">
+            <div class="id-details">
+                <h2>Banjara Beats Official</h2>
+                <p>Official Handle ID: <span>@BanjaraBeatsOfficial-y5t</span></p>
+            </div>
+        </div>
+        <p style="color: var(--brand-gold); font-weight: 600; font-size: 0.9rem;">Verified Creator Website ✅</p>
+    </div>
+
+    <!-- 💸 ADSTERRA TOP BANNER PLACE (100% WORKING IFRAME SYSTEM) -->
+    <div class="adsterra-box">
         <script type="text/javascript">
             atOptions = {
                 'key' : 'f3db8805f77a83d29486df8df6be0e6d',
@@ -236,80 +383,260 @@
         <script type="text/javascript" src="//www.highperformanceformat.com/f3db8805f77a83d29486df8df6be0e6d/invoke.js"></script>
     </div>
 
-    <!-- 🔱 SECTION 1: GOR BANJARA SPECIAL -->
-    <div class="section-box">
+    <!-- 📁 क्विक कॅटेगरी नेव्हिगेशन -->
+    <div class="nav-tabs">
+        <a href="#banjara-sec" class="tab-btn">बंजारा स्पेशल</a>
+        <a href="#marathi-sec" class="tab-btn">मराठी बायो</a>
+        <a href="#hindi-sec" class="tab-btn">हिंदी बायो</a>
+        <a href="#english-sec" class="tab-btn">English VIP</a>
+        <a href="#symbols-sec" class="tab-btn">Different Blocks</a>
+        <a href="#all-in-one-sec" class="tab-btn">All In One Block</a>
+    </div>
+
+    <!-- ==================== SECTION 1: 📿 GOR BANJARA SPECIAL (10 BIO) ==================== -->
+    <div class="section-header" id="banjara-sec">
         <div class="section-title">Gor Banjara Culture Special Bio</div>
     </div>
-    
-    <div class="grid-container">
-        <div class="bio-card">
-            <div class="bio-text">👑 Gormati Boy 👑
+    <div class="grid-layout">
+        <div class="data-card"><div class="content-text">👑 Gormati Boy 👑
 🔱 सेवालाल महाराज सेवक 🙏
 📿 सामकी माता की जय 🙌
 🎧 Status Creator 🎬
-🔥 नाद फक्त बंजारा बीट्स ♪</div>
-            <button class="copy-button" onclick="processCopy(this)">Copy 📋</button>
-        </div>
-
-        <div class="bio-card">
-            <div class="bio-text">👑 BANJARA BEATS 👑
+🔥 नाद फक्त बंजारा बीट्स ♪</div><button class="action-btn" onclick="copyEngine(this)">Copy 📋</button></div>
+        <div class="data-card"><div class="content-text">📿 गोर बंजारा 📿
+👑 किंग ऑफ गॉर्मटी 😎
+🦁 सेवाभाया वारसदार 🙏
+🎵 लव्ह बंजारा बीट्स म्युझिक 🥁
+🔥 विषय डायरेक्ट एंड 🔒</div><button class="action-btn" onclick="copyEngine(this)">Copy 📋</button></div>
+        <div class="data-card"><div class="content-text">👑 BANJARA BEATS 👑
 🦁 Heart Of Lion ❤️
 🎸 Music Lover 🎵
 😎 King Of My Own World 🌍
-विषय एंड...🔒</div>
-            <button class="copy-button" onclick="processCopy(this)">Copy 📋</button>
-        </div>
+विषय एंड...🔒</div><button class="action-btn" onclick="copyEngine(this)">Copy 📋</button></div>
+        <div class="data-card"><div class="content-text">🔱 जय सेवालाल महाराज 🔱
+🚩 गर्व आहे मी बंजारा असल्याचा 🚩
+😎 रॉयल एन्ट्री: जून ३ 🔪
+🏍️ रायडिंग क्रेझ ⚡
+🦁 ॲटिट्युड लेव्हल हाय 💯</div><button class="action-btn" onclick="copyEngine(this)">Copy 📋</button></div>
+        <div class="data-card"><div class="content-text">👑 GORMATI KING 👑
+📿 पोहरादेवी सेवक 🙏
+🎧 स्टेटस किंग 🎬
+⛓️ ब्रँडेड बंजारा बॉय ⚡
+🔥 रुबाब कधी कमी नाही होणार ⚔️</div><button class="action-btn" onclick="copyEngine(this)">Copy 📋</button></div>
+        <div class="data-card"><div class="content-text">⚡ BANJARA BRAND ⚡
+🦁 जिगर बंजारा 🦁
+💯 रॉयल रक्ताची धग 🔥
+🎧 @BanjaraBeatsOfficial 🎵
+❌ नो लव्ह नो टेन्शन 🔒</div><button class="action-btn" onclick="copyEngine(this)">Copy 📋</button></div>
+        <div class="data-card"><div class="content-text">👑 सेवालाल महाराज की जय 👑
+📿 सामकी माता भक्त 🙏
+🎬 व्हिडिओ क्रिएटर 🎥
+😎 ओळखीची गरज नाही भाऊ 🔱
+🔥 नाद करा पण आमचा कुठं ⚔️</div><button class="action-btn" onclick="copyEngine(this)">Copy 📋</button></div>
+        <div class="data-card"><div class="content-text">📿 GORMATI BOY 📿
+👑 रुबाब फक्त बंजारा चॅनेलचा 🎧
+🎵 स्टेटस किंग सोनू भाऊ 👑
+⚔️ निधड्या छातीचा बंजारा 🦁
+🔥 विषय एंड 🔒</div><button class="action-btn" onclick="copyEngine(this)">Copy 📋</button></div>
+        <div class="data-card"><div class="content-text">👑 BANJARA BEATS OFFICIAL 👑
+🔱 सेवाभाया कृपावंत 🙏
+🎧 विझ्युअल क्रिएटर 🎬
+🦁 रॉयल ॲटिट्युड बॉय 😎
+💥 कडक एन्ट्री ३ जून 🔪</div><button class="action-btn" onclick="copyEngine(this)">Copy 📋</button></div>
+        <div class="data-card"><div class="content-text">🔱 जय सेवालाल 🔱
+📿 संतांची भूमी, आमचा अभिमान 🚩
+👑 बंजारा कल्चर किंग 😎
+🎵 गाण्यांचा नाद कडक 🎧
+🔒 ओन्ली व्हीआयपी लाईफ 💎</div><button class="action-btn" onclick="copyEngine(this)">Copy 📋</button></div>
     </div>
 
-    <!-- 📢 ADSTERRA MIDDLE BANNER PLACE -->
-    <div class="ad-spot">
-        <!-- दुसरा जाहिरात कोड इथे येईल -->
+    <!-- ==================== SECTION 2: 🚩 MARATHI TRENDING BIO (7 BIO) ==================== -->
+    <div class="section-header" id="marathi-sec">
+        <div class="section-title">Kadhak Marathi Attitude Bio</div>
+    </div>
+    <div class="grid-layout">
+        <div class="data-card"><div class="content-text">👑 शिवभक्त 👑
+🚩 जय शिवराय 🚩
+😎 किंमत सर्वांना देणार, पण लायकीत राहिला तरच!
+🎂 केक मर्डर: ३ जून 🔪
+🔥 नाद फक्त बंजारा बीट्स चा!</div><button class="action-btn" onclick="copyEngine(this)">Copy 📋</button></div>
+        <div class="data-card"><div class="content-text">🦁 रॉयल कडक मराठमोळा 🦁
+❌ कोणासमोर झुकत नाही ❌
+⚔️ फक्त स्वतःचा ऐकतो 👑
+🎧 गाणी आणि स्टेटस प्रेमी 🎬
+💯 ॲटिट्युड किंग 😎</div><button class="action-btn" onclick="copyEngine(this)">Copy 📋</button></div>
+        <div class="data-card"><div class="content-text">👑 ब्रँडेड काळीज 🖤
+🔥 नाव ऐकलं की विषय संपतो!
+🦁 सिंह कधी कुत्र्यांची शिकार करत नाही!
+❌ नो लव्ह, ओन्ली करिअर 📈
+🔒 किंग ऑफ माय ओन रूल्स ⏳</div><button class="action-btn" onclick="copyEngine(this)">Copy 📋</button></div>
+        <div class="data-card"><div class="content-text">👑 व्हीआयपी मराठा बॉय 👑
+😎 शत्रू कितीही मोठे असू द्या, आपण वाकवणारच!
+🎂 खास एन्ट्री ३ जून 🔪
+🏍️ केटीएम लव्हर ⚡
+🔥 विषय डायरेक्ट एंड!</div><button class="action-btn" onclick="copyEngine(this)">Copy 📋</button></div>
+        <div class="data-card"><div class="content-text">⚡ कडक रुबाब ⚡
+💥 बोलणं गोड पण काळीज वाघाचं 🦁
+❌ फालतू लोकांची गरज नाही ❌
+🎵 म्युझिक इज माय लाईफ 🎧
+👑 किंग साईज लाईफ 🌍</div><button class="action-btn" onclick="copyEngine(this)">Copy 📋</button></div>
+        <div class="data-card"><div class="content-text">👑 बाप तो बाप रहेगा 👑
+😎 दुनिया जळणार, आपण अजून नडणार!
+🖤 डार्क लाईफ, हाय गोल्स 🎯
+🎬 चॅनेल फॅन: बंजारा बीट्स 🎧
+🔒 गेम ओव्हर ☠️</div><button class="action-btn" onclick="copyEngine(this)">Copy 📋</button></div>
+        <div class="data-card"><div class="content-text">🔱 महाकाल भक्त 🔱
+🚩 कपाळावर चंद्रकोर, मनात जिगर 🦁
+😎 रुबाब काय असतो तो आमच्याकडे बघून समजेल!
+🎂 एन्ट्री: ३ जून 💥
+🔥 विषय एंड 🔒</div><button class="action-btn" onclick="copyEngine(this)">Copy 📋</button></div>
     </div>
 
-    <!-- 👑 SECTION 2: ULTRA TRENDING VIP ATTITUDE -->
-    <div class="section-box">
-        <div class="section-title">Ultra-Trending VIP Bio Styles</div>
+    <!-- 💸 ADSTERRA MIDDLE BANNER PLACE -->
+    <div class="adsterra-box">
+        <!-- दुसरी जाहिरात इथे लोड होईल -->
     </div>
-    
-    <div class="grid-container">
-        <div class="bio-card">
-            <div class="bio-text">亗 『 KING 』 亗
+
+    <!-- ==================== SECTION 3: 👑 HINDI ATTITUDE BIO (7 BIO) ==================== -->
+    <div class="section-header" id="hindi-sec">
+        <div class="section-title">Trending Hindi Killer Bio</div>
+    </div>
+    <div class="grid-layout">
+        <div class="data-card"><div class="content-text">👑 नवाबो का नवाब 👑
+🔥 हमारी बराबरी करने की सोच भी मत!
+🦁 अकेले रहने का दम है मुझमे 🦁
+❌ प्यार व्यार सब धोखा है 🚫
+☠️ सिर्फ अपना राज चलेगा ⚔️</div><button class="action-btn" onclick="copyEngine(this)">Copy 📋</button></div>
+        <div class="data-card"><div class="content-text">⚡ रॉयल एटीट्यूड बॉय ⚡
+😎 नाम और पहचान दोनों कड़क है!
+🎂 केक मर्डर ३ जून 🔪
+🎵 बंजारा बीट्स के दीवाने 🎧
+🔥 वक्त आने पर जवाब नहीं, हिसाब करेंगे 🔒</div><button class="action-btn" onclick="copyEngine(this)">Copy 📋</button></div>
+        <div class="data-card"><div class="content-text">👑 बादशाह 👑
+🌍 मेरी दुनिया, मेरे रूल्स 🌍
+🦁 शेर का जिगर, दोस्तों की जान ❤️
+❌ दुश्मनों की औकात नहीं सामने आने की ⚔️
+🔒 गेम चेंजर 🎯</div><button class="action-btn" onclick="copyEngine(this)">Copy 📋</button></div>
+        <div class="data-card"><div class="content-text">🔱 महाकाल के दीवाने 🔱
+🔥 आग लगा देंगे उस महफिल में, जहां सम्मान न हो!
+😎 चुप रहना हमारी कमजोरी नहीं, तहजीब है!
+🎂 स्पेशल डे ३ जून 🎉
+⚡ किंग ऑफ एटीट्यूड 👑</div><button class="action-btn" onclick="copyEngine(this)">Copy 📋</button></div>
+        <div class="data-card"><div class="content-text">👑 बदनाम नवाब 👑
+🔥 चर्चे हमेशा कड़क नाम के होते है!
+🖤 ब्लैक हार्टेड बॉय 🖤
+🚫 फेक दोस्तों से दूरी ❌
+🔒 विषय एंड...⚔️</div><button class="action-btn" onclick="copyEngine(this)">Copy 📋</button></div>
+        <div class="data-card"><div class="content-text">🦁 खुद का कमाया रुतबा है 🦁
+😎 किसी के टुकड़ों पर नहीं पलते!
+🏎️ स्पीड और एटीट्यूड दोनों हाय है ⚡
+🎧 स्टेटस क्रिएटर सोनू भाऊ फैन 🎬
+👑 किंग इज बैक ☠️</div><button class="action-btn" onclick="copyEngine(this)">Copy 📋</button></div>
+        <div class="data-card"><div class="content-text">⚡ खतरनाक बॉय ⚡
+🔥 तेवर तो हम वक्त आने पर दिखाएंगे!
+🦁 जंगल में शेर और शहर में हम राज करते है 👑
+🎂 केक मर्डर ३ जून 🔪
+🔒 गेम ओवर ☠️</div><button class="action-btn" onclick="copyEngine(this)">Copy 📋</button></div>
+    </div>
+
+    <!-- ==================== SECTION 4: 🦅 ENGLISH VIP ATTITUDE BIO (7 BIO) ==================== -->
+    <div class="section-header" id="english-sec">
+        <div class="section-title">Ultra VIP English Bio Styles</div>
+    </div>
+    <div class="grid-layout">
+        <div class="data-card"><div class="content-text">亗 『 KING 』 亗
 🔥 Only Attitude No Love ❌
 🦅 Royal Blood 🩸
 💯 Welcome to My Rules ⏳
-☠️ Game Over ☠️</div>
-            <button class="copy-button" onclick="processCopy(this)">Copy 📋</button>
-        </div>
-
-        <div class="bio-card">
-            <div class="bio-text">🖤 Black Heart 🖤
-🚫 No Care No Share 👁️‍🗨️
+☠️ Game Over ☠️</div><button class="action-btn" onclick="copyEngine(this)">Copy 📋</button></div>
+        <div class="data-card"><div class="content-text">🖤 Black Heart 🖤
+🚫 No Care No Share 👁️‍賃
 🦁 Mr. Perfect ✨
 Cake Murder: June 3 🔪
-💥 Live Like A Legend 👑</div>
-            <button class="copy-button" onclick="processCopy(this)">Copy 📋</button>
-        </div>
+💥 Live Like A Legend 👑</div><button class="action-btn" onclick="copyEngine(this)">Copy 📋</button></div>
+        <div class="data-card"><div class="content-text">👑 VIP Account 👑
+🦁 Born To Rule Not To Follow 🦅
+🎧 Music & Video Obsessed 🎬
+⚡ High Voltage Personality 🔋
+🔒 Silence Is My Best Weapon ⚔️</div><button class="action-btn" onclick="copyEngine(this)">Copy 📋</button></div>
+        <div class="data-card"><div class="content-text">💎 Premium Soul 💎
+😎 Attitude Depends On How You Treat Me!
+🎂 Royal Entry 3 June 🔪
+🏎️ Speed Rider 🏁
+🔥 End of Story 🔒</div><button class="action-btn" onclick="copyEngine(this)">Copy 📋</button></div>
+        <div class="data-card"><div class="content-text">⚡ Legend Never Dies ⚡
+🦁 Mastermind Creator 🎯
+🎧 @BanjaraBeatsOfficial 🎵
+❌ Don't Trust Anyone ❌
+☠️ Dangerous Mind ☠️</div><button class="action-btn" onclick="copyEngine(this)">Copy 📋</button></div>
+        <div class="data-card"><div class="content-text">👑 King Of My Kingdom 👑
+🌍 Simple Boy with High Standards ✨
+🖤 Respect Earned, Not Asked 🙌
+🎂 Wish Me On 3 June 💥
+🔒 Locked Forever 🔓</div><button class="action-btn" onclick="copyEngine(this)">Copy 📋</button></div>
+        <div class="data-card"><div class="content-text">🔥 Attitude King 🔥
+🦁 Wild & Free 🦅
+🚫 No Girlfriend No Problem ❌
+🎬 Creating Trends Every Day 🎥
+☠️ Welcome To Hell ☠️</div><button class="action-btn" onclick="copyEngine(this)">Copy 📋</button></div>
+    </div>
+
+    <!-- ==================== SECTION 5: ⚡ DIFFERENT BLOCKS OF SYMBOLS ==================== -->
+    <div class="section-header" id="symbols-sec">
+        <div class="section-title">Different Blocks of Viral Symbols</div>
+    </div>
+    <div class="symbol-grid">
+        <div class="symbol-card"><div class="symbol-text">👑 किंग सिम्बॉल्स 👑<br>亗 『 👑 』 亗  👑🔱👑  🎪 KING 🎪</div><button class="action-btn" onclick="copyEngine(this)">Copy Block 📋</button></div>
+        <div class="symbol-card"><div class="symbol-text">⚡ निऑन लाईटनिंग ⚡<br>⚡⛓️⚡  ⚡🔋⚡  💥⚡💥  ☣️⚡☣️</div><button class="action-btn" onclick="copyEngine(this)">Copy Block 📋</button></div>
+        <div class="symbol-card"><div class="symbol-text">⚔️ डेंजर वेपन्स ⚔️<br>⚔️ 🔪 ☠️ 🔫 🪓 ⚔️ 🩸</div><button class="action-btn" onclick="copyEngine(this)">Copy Block 📋</button></div>
+        <div class="symbol-card"><div class="symbol-text">🦅 बर्ड्स & लायन 🦅<br>🦁 🦅 🐺 🦂 🦂 🦁</div><button class="action-btn" onclick="copyEngine(this)">Copy Block 📋</button></div>
+        <div class="symbol-card"><div class="symbol-text">🔱 रिलिजियस & कल्चर 🔱<br>🔱 📿 🙏 🚩 📿 🙏 🔱</div><button class="action-btn" onclick="copyEngine(this)">Copy Block 📋</button></div>
+        <div class="symbol-card"><div class="symbol-text">🎬 म्युझिक & एडिटिंग 🎬<br>🎧 🎵 🎬 🎧 🥁 🎸 🎥 🎵</div><button class="action-btn" onclick="copyEngine(this)">Copy Block 📋</button></div>
+    </div>
+
+    <!-- ==================== SECTION 6: 🔲 ALL IN ONE BIG BLOCK ==================== -->
+    <div class="section-header" id="all-in-one-sec">
+        <div class="section-title">All In One Big Symbol Block</div>
+    </div>
+    <div class="all-in-one-box">
+        <div class="all-in-one-text" id="allSymbols">亗 『 KING 』 亗 🔱 📿 🙏 🚩 🦁 🦅 ⚡ ⛓️ 🔪 ☠️ 🔫 🪓 🩸 👑 🎧 🎵 🎬 🥁 🎸 🎥 💥 🔋 ☣️ 💎 🖤 ❌ 🚫 🔐 ⏳ 🌍 🎯 🎪 💎 ⚡ ⚔️ 📿 🦁 🦅 亗</div>
+        <button class="action-btn" onclick="copyAllInOne()">Copy All In One Block 📋</button>
     </div>
 
     <!-- 👣 फुटर -->
     <footer>
-        <p>© 2026 Banjara Beats Official. Designed for Creators. 🔥</p>
+        <p>© 2026 Banjara Beats Official | Designed specially for Sonu Bhau. All Rights Reserved. 🔥</p>
     </footer>
 
-    <!-- ⚡ सिस्टीमॅटिक कॉपी जावास्क्रिप्ट -->
+    <!-- ⚡ कडक सिस्टीमॅतिक कॉपी इंजिन स्क्रिप्ट -->
     <script>
-        function processCopy(btn) {
-            const textToCopy = btn.previousElementSibling.innerText;
-            navigator.clipboard.writeText(textToCopy).then(() => {
+        function copyEngine(btn) {
+            const targetText = btn.previousElementSibling.innerText;
+            navigator.clipboard.writeText(targetText).then(() => {
+                const originalText = btn.innerHTML;
                 btn.innerHTML = "Copied! ✔️";
-                btn.classList.add("success");
+                btn.classList.add("copied");
                 
                 setTimeout(() => {
-                    btn.innerHTML = "Copy 📋";
-                    btn.classList.remove("success");
-                }, 2500);
+                    btn.innerHTML = originalText;
+                    btn.classList.remove("copied");
+                }, 2000);
             }).catch(err => {
-                console.error("Error copy: ", err);
+                console.error("Error copying: ", err);
+            });
+        }
+
+        function copyAllInOne() {
+            const allText = document.getElementById("allSymbols").innerText;
+            navigator.clipboard.writeText(allText).then(() => {
+                const btn = document.querySelector('.all-in-one-box .action-btn');
+                btn.innerHTML = "All Symbols Copied! ✔️";
+                btn.classList.add("copied");
+                
+                setTimeout(() => {
+                    btn.innerHTML = "Copy All In One Block 📋";
+                    btn.classList.remove("copied");
+                }, 2500);
             });
         }
     </script>
