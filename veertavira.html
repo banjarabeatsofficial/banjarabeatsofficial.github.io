@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veer & Tavira VIP Bio & Symbols - Banjara Beats Official</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background: #fffcf2; margin: 0; padding: 20px; }
+        .header { background: #ffcc00; padding: 15px; border-radius: 10px; color: #000; margin-bottom: 20px; }
+        .bio-box { background: #fff; border: 2px solid #ff9900; border-radius: 8px; padding: 15px; margin: 15px auto; max-width: 500px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .bio-text { font-size: 18px; font-weight: bold; margin-bottom: 10px; color: #333; }
+        .copy-btn { background: #ff9900; border: none; color: white; padding: 8px 15px; border-radius: 5px; cursor: pointer; font-weight: bold; }
+        .copy-btn:hover { background: #e68a00; }
+        .back-btn { display: inline-block; margin-top: 20px; text-decoration: none; color: #ff9900; font-weight: bold; }
+    </style>
+</head>
+<body>
 
+    <div class="header">
+        <h2>🔥 Veer & Tavira VIP Bio & Symbols Hub 🔥</h2>
+        <p>Gam Gam Sugandh Special Banjara Swag ✨</p>
+    </div>
+
+    <!-- Bio 1 -->
+    <div class="bio-box">
+        <p class="bio-text" id="b1">👑 ᏙᎬᎬᎡ_ᏦᎥ_ᎢᎪᏙᎥᎡᎪ 👑 ❤️✨</p>
+        <button class="copy-btn" onclick="copyText('b1')">Copy Bio</button>
+    </div>
+
+    <!-- Bio 2 -->
+    <div class="bio-box">
+        <p class="bio-text" id="b2">👑 ᎢᎪᏙᎥᎡᎪ_ᏦᎪ_ᏙᎬᎬᎡ 👑 💞🌙</p>
+        <button class="copy-btn" onclick="copyText('b2')">Copy Bio</button>
+    </div>
+
+    <!-- Bio 3 -->
+    <div class="bio-box">
+        <p class="bio-text" id="b3">⚡ Vєєя 💖 Tαvιяα ⚡ [ Gam Gam Sugandh...🌸 ]</p>
+        <button class="copy-btn" onclick="copyText('b3')">Copy Bio</button>
+    </div>
+
+    <!-- Bio 4 -->
+    <div class="bio-box">
+        <p class="bio-text" id="b4">🦋 VEER x TAVIRA 🦋 ║ Cinemari Hironi 🎬</p>
+        <button class="copy-btn" onclick="copyText('b4')">Copy Bio</button>
+    </div>
+
+    <a href="index.html" class="back-btn">⬅️ Go Back to Home</a>
+
+    <script>
+    function copyText(id) {
+        var text = document.getElementById(id).innerText;
+        navigator.clipboard.writeText(text);
+        alert("VIP Bio Copied! 👍");
+    }
+    </script>
+
+</body>
+</html>
