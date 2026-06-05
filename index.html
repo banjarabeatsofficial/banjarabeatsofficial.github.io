@@ -99,6 +99,31 @@
         .id-details span { color: var(--brand-gold); font-weight: 700; }
 
         /* 📁 सुटसुटीत कॅटेगरी नेव्हिगेशन टॅब्ज (हे जाहिरातीच्या वरती आणले आहे) */
+        <!-- Veer Tavira Special Section -->
+<div class="trending-section" style="text-align: center; margin: 20px; padding: 15px; border: 2px solid #ffcc00; border-radius: 10px;">
+    <h3 style="color: #ff9900;">🔥 Veer & Tavira Special Bio & Symbols 🔥</h3>
+    
+    <!-- Copy Karasathi Box 1 -->
+    <div class="bio-box" style="background: #f9f9f9; padding: 10px; margin: 10px; border-radius: 5px;">
+        <p id="bio1">👑 ᏙᎬᎬᎡ ᏦᎥ ᎢᎪᏙᎥᎡᎪ 👑 ❤️✨</p>
+        <button onclick="copyBio('bio1')" style="background: #ffcc00; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer;">Copy Bio</button>
+    </div>
+
+    <!-- Copy Karasathi Box 2 -->
+    <div class="bio-box" style="background: #f9f9f9; padding: 10px; margin: 10px; border-radius: 5px;">
+        <p id="bio2">🦋 ᎢᎪᏙᎥᎡᎪ ᏦᎪ ᏙᎬᎬᎡ 🦋 💞🌙</p>
+        <button onclick="copyBio('bio2')" style="background: #ffcc00; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer;">Copy Bio</button>
+    </div>
+</div>
+
+<!-- JavaScript Copy Function (Jar aadhi nasil tar script tag madhye taka) -->
+<script>
+function copyBio(id) {
+    var text = document.getElementById(id).innerText;
+    navigator.clipboard.writeText(text);
+    alert("Bio Copied! 👍");
+}
+</script>
         .nav-tabs {
             max-width: 1200px; margin: 15px auto; display: flex; gap: 10px; overflow-x: auto; padding: 5px 20px;
             justify-content: center;
@@ -179,9 +204,6 @@
 
         footer { text-align: center; padding: 40px 20px; margin-top: 80px; border-top: 1px solid var(--border-color); font-size: 0.85rem; color: var(--gray-text); }
     </style>
-
-    <!-- 🌐 १. ADSTERRA SOCIAL BAR CODE -->
-    <script src="https://pl29627496.effectivecpmnetwork.com/e0/c0/3b/e0c03bd4afea3ae636cd16b35575c68f.js"></script>
 
 </head>
 <body>
